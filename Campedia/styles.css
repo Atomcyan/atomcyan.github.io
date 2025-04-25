@@ -1,0 +1,298 @@
+
+/*body css*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html{
+ min-width: 350px;
+}
+body{
+    width: 100%;
+    background: url("images/river_landscape_orange_red1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+   min-height:80vh;
+    color: #fff;
+     overflow-x: hidden;
+    }
+
+   
+    
+    @media (orientation: portrait){
+     
+
+    .content-block ul {
+        list-style:  none;
+  display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 200px) ;
+  
+    }
+    }
+
+
+
+
+/* Howto pages CSS */
+.box-one{
+background-color:#ff8e57;
+font-family: 'Times New Roman', Times, serif;
+min-width: 48vw;
+max-width: 800px;
+border: 3px solid #9C0000;
+padding: 50px;
+margin: 60px 45px 45px 15px;
+
+color: #9C0000;
+border-radius: 10px;
+}
+
+.box-one ul li{
+margin-bottom: 12px;
+}
+
+
+
+h3{
+font-size: 23px;
+color:#9C0000;
+padding: 5px;
+text-decoration: underline;
+}
+
+p{
+    
+    padding: 5px;
+}
+
+/* Nagivation  Menu CSS */
+
+.nav{
+    display: block;
+    background-color: #9C0000;
+    min-width: 811px;
+    padding-top: 28px;
+    padding-bottom: 55px;
+    font-size: 23px;
+    font-weight: bold;
+    top:0;
+    }
+
+
+    .nav a{
+        padding-left: 54px; 
+        color: #f5b227;
+        padding-bottom: 55px;
+        text-decoration: none;
+        
+    }
+
+
+    .nav img{
+    min-height: 3vh;
+ 
+    }
+
+    .nav a :hover{
+       text-decoration: underline;
+       font-weight: bold;
+        
+    }
+
+    /* index.html CSS */
+
+ img{
+min-width: 140px;
+max-height: 140px;
+}
+
+
+
+
+    
+   footer{
+   
+    background-color: #9C0000;   
+    color:white;
+  
+    min-width: 23vw;
+   
+    padding-right: 14vh;
+    padding-left: 20vh;
+    padding-bottom:4vh;
+    font-size: 23px;
+    font-weight: bold;
+    }
+    
+
+    @media (orientation: landscape){ 
+    .content-block ul {
+    list-style: none;
+    display: grid;
+  
+    margin-left: 100px;
+    margin-top: 60px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 200px);
+   }
+    }
+   
+    .content-block ul li a{
+     background-color: #ff8e57;
+    padding: 11px;
+    display: flex;
+    width: 252px;
+    height: 162px;
+    color: #9C0000;
+    border: 3px solid #9C0000;
+    min-width: 15vw;
+    min-height: 10vw;
+    text-decoration: none;
+    border-radius: 10px;
+  
+    }
+    .content-block  li a{
+        
+        padding:2vw;
+       
+    }
+
+    .content-block ul li a img{
+    padding-right: 15px;
+    border-radius: 20px;
+    }
+    
+    .content-block ul li a:hover{
+    background-color: #ff9f57;
+    text-decoration: underline;
+    }
+    
+    /* About Page css */
+    .About{
+        background-color: #ffa970;
+        font-family: 'Times New Roman', Times, serif;
+        min-width: 900px ;
+        font-size: 12px;
+        min-height: 90vh;
+        border: 3px solid #9C0000;
+        color: #9C0000;
+        padding: 20px;
+        margin: 70px 55px 40px 20px;
+        border-radius: 10px;
+
+    }
+
+    .About p{
+    display: block;
+      font-size: 18px;  
+     float: left;
+     text-indent: 15px;
+    }
+    
+
+    .About h2{
+        border-bottom: 3px solid #9C0000;
+    }
+
+    #siteSearch{
+    position: static;
+    min-width: 60vw;
+    min-height: 3vh;
+    margin: 0;
+    top: 7vw;
+    right: 30vw;
+    background-color: #ffa970;
+    color: #9C0000;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+    }
+
+
+    .explainationBlock{
+        margin-top: 90vh;
+        padding-top: 3vh;
+        padding-right: 14vh;
+        padding-left: 20vh;
+        color: #9C0000;
+        background-color: #ff9f57;
+        display: inline-grid;
+        grid-template-columns: repeat(3,420px);
+        grid-column-gap: 20px ;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .explainationBlock h2{
+    
+    border-bottom: 3px solid #9C0000;
+    }
+
+    .explainationBlock p{
+    padding-top: 90px;
+    grid-column: 3/4;
+   
+    }
+    
+    .explainationBlock img{
+    padding-top: 30px ;
+ 
+    min-width: 350px;
+    max-height: 250px;
+    }
+
+  
+    @media (orientation: portrait){
+   .explainationBlock{
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    padding-bottom:25vh;
+   
+   }
+
+   .explainationBlock p{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+     
+    grid-row: 4/4;
+   
+  
+   }
+
+
+   footer{
+ padding-top: 10vh;
+   }
+
+    }
+
+
+
+    #siteList{
+    margin-bottom: 66vh;
+    }
+    .siteCard {
+    background-color:#ed9569;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    border: 3px solid #9C0000;
+    margin: 30px;
+    display: inline-grid;
+    color: #9C0000;
+    max-width: 300px;
+    min-height: 300px;
+    border-radius: 10px;
+
+    }
+
+    .siteCard li {
+    display: grid;
+    }
